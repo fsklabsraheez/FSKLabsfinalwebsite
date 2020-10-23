@@ -14,7 +14,14 @@ $name = strip_tags(htmlspecialchars($_POST['name']));
 $email_address = strip_tags(htmlspecialchars($_POST['email']));
 $phone = strip_tags(htmlspecialchars($_POST['phone']));
 $message = strip_tags(htmlspecialchars($_POST['message']));
-   
+$secretKey ="6Lc6u9oZAAAAAC4DbhK5SVVc_-3scKdyx5ANRPJp";
+$responseKey = $_POST['g-recaptcha-response'];
+$url = "https://www.google.com/recaptcha/api/siteverify?secret=$secretKey&response=$responseKey"
+
+$response = file_get_contensts($url);
+$response = json_decode($response);
+
+
 // Create the email and send the message
 $to = 'admin@fsklabs.in'; // Add your email address in between the '' replacing yourname@yourdomain.com - This is where the form will send a message to.
 $email_subject = "Website Contact Form:  $name";
@@ -23,4 +30,17 @@ $headers = "From: noreply@fsklabs.in\n"; // This is the email address the genera
 $headers .= "Reply-To: $email_address";   
 mail($to,$email_subject,$email_body,$headers);
 return true;         
+//if($response->success)
+//{ if(mail($to, $email_subject, $email_body, $headers))
+//   { $msg="Message sent Successfully!";
+//   }
+//   else
+//    { $msg="Failed to send the message!";
+//      }
+//   
+//      else
+//      {
+//       $msg="verification Failed!";
+//     }
+//}
 ?>
