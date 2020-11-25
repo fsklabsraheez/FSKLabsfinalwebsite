@@ -1,0 +1,19 @@
+[23-Oct-2020 22:07:11 UTC] PHP Parse error:  syntax error, unexpected '$response' (T_VARIABLE) in /home/bkdzzbyw/public_html/assets/mail/contact_me.php on line 21
+[23-Oct-2020 22:07:28 UTC] PHP Parse error:  syntax error, unexpected '$response' (T_VARIABLE) in /home/bkdzzbyw/public_html/assets/mail/contact_me.php on line 21
+[23-Oct-2020 22:13:44 UTC] PHP Parse error:  syntax error, unexpected '$response' (T_VARIABLE) in /home/bkdzzbyw/public_html/assets/mail/contact_me.php on line 21
+[23-Oct-2020 22:55:13 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function file_get_contensts() in /home/bkdzzbyw/public_html/assets/mail/contact_me.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/bkdzzbyw/public_html/assets/mail/contact_me.php on line 18
+[23-Oct-2020 23:02:30 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function file_get_contensts() in /home/bkdzzbyw/public_html/assets/mail/contact_me.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/bkdzzbyw/public_html/assets/mail/contact_me.php on line 18
+[23-Oct-2020 23:04:03 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function file_get_contensts() in /home/bkdzzbyw/public_html/assets/mail/contact_me.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/bkdzzbyw/public_html/assets/mail/contact_me.php on line 18
+[23-Oct-2020 23:05:16 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function file_get_contensts() in /home/bkdzzbyw/public_html/assets/mail/contact_me.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/bkdzzbyw/public_html/assets/mail/contact_me.php on line 18
